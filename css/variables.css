@@ -1,0 +1,35 @@
+:root {
+    /* New Dark Theme Colors */
+    --color-background: #1a1a1a;
+    --color-text: #ffffff;
+    --color-neon: #00f7ff;  /* Bright cyan/blue for neon effect */
+    --color-dark: #2d2d2d;
+    --color-accent: #333333;
+    
+    /* Typography */
+    --font-size-sm: 1.4rem;
+    --font-size-base: 1.6rem;
+    --font-size-lg: 2rem;
+    --font-size-xl: 2.4rem;
+    --font-size-xxl: 3.5rem;
+
+    /* Spacing */
+    --spacing-xs: 0.4rem;
+    --spacing-sm: 0.8rem;
+    --spacing-md: 1.6rem;
+    --spacing-lg: 2.4rem;
+    --spacing-xl: 3.2rem;
+
+    /* Border Radius */
+    --border-radius-sm: 4px;
+    --border-radius-md: 8px;
+    --border-radius-lg: 50px;
+
+    /* Transitions */
+    --transition-base: all 0.3s ease;
+    
+    /* Neon Shadow */
+    --neon-glow: 0 0 5px var(--color-neon),
+                 0 0 10px var(--color-neon),
+                 0 0 15px var(--color-neon);
+} 

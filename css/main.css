@@ -1,0 +1,148 @@
+@import 'reset.css';
+@import 'variables.css';
+
+/* Layout */
+.container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #1a1a1a, #333333);
+    font-family: 'Roboto', sans-serif;
+    color: var(--color-text);
+    padding: var(--spacing-xl);
+}
+
+/* Main Content */
+main {
+    width: 90%;
+    max-width: 1200px;
+    background: var(--color-dark);
+    border-radius: var(--border-radius-lg);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    padding: var(--spacing-xl) var(--spacing-xl);
+    text-align: left;
+}
+
+h1 {
+    font-size: 5rem;
+    margin-bottom: var(--spacing-lg);
+    color: var(--color-text);
+    line-height: 1.2;
+}
+
+.title {
+    font-size: 2.4rem;
+    margin-bottom: var(--spacing-xl);
+    color: var(--color-neon);
+    font-weight: 500;
+}
+
+/* Description Layout */
+.description {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xl);
+    margin: var(--spacing-xl) 0;
+    font-size: 1.8rem;
+    line-height: 1.6;
+}
+
+.current-role, .previous-work {
+    background: var(--color-accent);
+    padding: var(--spacing-lg) var(--spacing-xl);
+    border-radius: var(--border-radius-md);
+    border-left: 6px solid var(--color-neon);
+}
+
+.current-role p, .previous-work p {
+    font-size: 1.8rem;
+    line-height: 1.8;
+}
+
+/* Action Section */
+.action-section {
+    margin-top: var(--spacing-xl);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xl);
+    align-items: flex-start;
+}
+
+/* CTA Button */
+.cta-button {
+    background: var(--color-neon);
+    color: var(--color-background);
+    padding: 1.5rem 3rem;
+    border-radius: var(--border-radius-lg);
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.cta-button:hover {
+    background: var(--color-text);
+    color: var(--color-neon);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(0, 247, 255, 0.3);
+}
+
+/* Social Links */
+.social-links {
+    display: flex;
+    gap: var(--spacing-xl);
+    margin-top: var(--spacing-lg);
+}
+
+.social-icon {
+    color: var(--color-text);
+    font-size: 2.4rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    transition: all 0.3s ease;
+    padding: 1rem 2rem;
+    border-radius: var(--border-radius-md);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.social-icon i {
+    font-size: 2.4rem;
+}
+
+.social-icon:hover {
+    color: var(--color-neon);
+    transform: translateY(-3px);
+    background: rgba(255, 255, 255, 0.15);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .container {
+        padding: var(--spacing-md);
+    }
+
+    main {
+        width: 100%;
+        padding: var(--spacing-lg);
+    }
+
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .current-role p, .previous-work p {
+        font-size: 1.6rem;
+    }
+}
+ 
