@@ -1,7 +1,6 @@
 @import 'reset.css';
 @import 'variables.css';
 
-/* Layout */
 .container {
     min-height: 100vh;
     display: flex;
@@ -13,7 +12,6 @@
     padding: var(--spacing-xl);
 }
 
-/* Main Content */
 main {
     width: 90%;
     max-width: 1000px;
@@ -42,10 +40,16 @@ h1 {
     color: #cccccc;
 }
 
-.about {
-    margin-bottom: var(--spacing-xl);
-    font-size: 1.4rem;
-    line-height: 1.6;
+.description {
+    margin: var(--spacing-xl) 0;
+}
+
+.current-role, .previous-work {
+    background: rgba(255, 255, 255, 0.05);
+    padding: var(--spacing-lg);
+    margin-bottom: var(--spacing-lg);
+    border-radius: var(--border-radius-md);
+    border-left: 4px solid #00f7ff;
 }
 
 .skills {
@@ -67,9 +71,15 @@ h1 {
     font-size: 1.2rem;
 }
 
+.action-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-xl);
+}
+
 .cta-button {
-    background: #00f7ff;
-    color: #1a1a1a;
     padding: 1rem 2rem;
     border-radius: var(--border-radius-lg);
     font-size: 1.4rem;
@@ -79,7 +89,11 @@ h1 {
     display: inline-flex;
     align-items: center;
     gap: 1rem;
-    margin: var(--spacing-md);
+}
+
+.cta-button.primary {
+    background: #00f7ff;
+    color: #1a1a1a;
 }
 
 .cta-button.secondary {
@@ -88,25 +102,42 @@ h1 {
     color: #00f7ff;
 }
 
-.cta-button.secondary:hover {
-    background: #00f7ff;
-    color: #1a1a1a;
+.cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(0, 247, 255, 0.3);
 }
 
 .social-links {
     display: flex;
-    gap: var(--spacing-lg);
-    justify-content: center;
+    gap: var(--spacing-xl);
     margin-top: var(--spacing-lg);
 }
 
 .social-icon {
     color: #ffffff;
-    font-size: 2rem;
     text-decoration: none;
+    font-size: 1.8rem;
     transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 .social-icon:hover {
     color: #00f7ff;
+    transform: translateY(-3px);
+}
+
+@media (max-width: 768px) {
+    main {
+        padding: var(--spacing-lg);
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    .title {
+        font-size: 1.6rem;
+    }
 } 
